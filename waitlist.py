@@ -80,4 +80,5 @@ if __name__ == "__main__":
         print(repr(q))
         q.pop_left()
         print(f"{s.data} has been moved off the waitlist")
-    print("Waitlist empty")
+    if q.size == 0:
+        print("Waitlist empty")
